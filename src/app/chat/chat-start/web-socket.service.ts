@@ -7,7 +7,7 @@ export class WebSocketService {
     socket: SocketIOClient.Socket;
 
     constructor() {
-        this.socket = io.connect('http://localhost:5000');
+        this.socket = io.connect('https://papyrusdocs1.azurewebsites.net');
     }
 
     listen(eventname: string) : Observable<any> {

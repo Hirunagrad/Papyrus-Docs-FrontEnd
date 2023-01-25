@@ -10,11 +10,11 @@ export class AuthService {
   constructor(private http: HttpClient,private router : Router) {}
 
   registerUser(user: any) {
-    return this.http.post('http://localhost:5000/api/register', user);
+    return this.http.post('https://papyrusdocs1.azurewebsites.net/api/register', user);
   }
 
   loginUser(user: any) {
-    return this.http.post('http://localhost:5000/api/login', user);
+    return this.http.post('https://papyrusdocs1.azurewebsites.net/api/login', user);
   }
 
   loggedIn() {

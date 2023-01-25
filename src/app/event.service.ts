@@ -8,10 +8,10 @@ export class EventService {
   constructor(private http: HttpClient) {}
 
   getEvents() {
-    return this.http.get('http://localhost:5000/api/events/');
+    return this.http.get('https://papyrusdocs1.azurewebsites.net/api/events/');
   }
 
   getSpecialEvents() {
-    return this.http.get('http://localhost:5000/api/special/');
+    return this.http.get('https://papyrusdocs1.azurewebsites.net/api/special/');
   }
 }

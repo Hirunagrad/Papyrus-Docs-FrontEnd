@@ -40,7 +40,7 @@ describe('TemplateService', () => {
       });
 
       const req = httptestcontrol.expectOne(
-        'http://localhost:5000/hrtemplate/getEmployeeApplcation'
+        'https://papyrusdocs1.azurewebsites.net/hrtemplate/getEmployeeApplcation'
       );
       expect(req.cancelled).toBeFalsy();
       expect(req.request.responseType).toEqual('json');
@@ -81,7 +81,7 @@ describe('TemplateService', () => {
       });
 
       const req = httptestcontrol.expectOne(
-        'http://localhost:5000/hrtemplate/saveemployeeapplcation'
+        'https://papyrusdocs1.azurewebsites.net/hrtemplate/saveemployeeapplcation'
       );
       expect(req.cancelled).toBeFalsy();
       expect(req.request.responseType).toEqual('json');
@@ -124,7 +124,7 @@ describe('TemplateService', () => {
         });
 
       const req = httptestcontrol.expectOne(
-        `http://localhost:5000/template/deleteTemplate/1`
+        `https://papyrusdocs1.azurewebsites.net/template/deleteTemplate/1`
       );
       expect(req.cancelled).toBeFalsy();
       expect(req.request.responseType).toEqual('json');
@@ -170,7 +170,7 @@ describe('TemplateService', () => {
         });
 
       const req = httptestcontrol.expectOne(
-        `http://localhost:5000/hrtemplate/updateTemplate/1`,testpost
+        `https://papyrusdocs1.azurewebsites.net/hrtemplate/updateTemplate/1`,testpost
       );
       expect(req.cancelled).toBeFalsy();
       expect(req.request.responseType).toEqual('json');
