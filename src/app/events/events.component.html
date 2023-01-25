@@ -1,0 +1,157 @@
+<!-- <div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of events">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.description}}</p>
+        <a href="#" class="btn btn-primary">Buy Tickets</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{event.date | date:'shortDate'}}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12 d-flex flex-row">
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        placeholder="seach templates"
+        aria-describedby="emailHelp"
+        style="width: 25%; margin-right: 10px"
+      />
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+    <div class="col-md-12 d-flex flex-row mt-5">
+      <h3 style="font-weight: bolder">For You</h3>
+    </div>
+    <div class="col-md-12 d-flex flex-row mt-5" style="height: 5%">
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <div class="card" style="width: 280px">
+            <img
+              src="../../assets/business-proposal.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="text-align: center; font-weight: bold"
+              >
+                Employee Application
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <div class="card" style="width: 280px">
+            <img
+              src="../../assets/performance-proposel.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="text-align: center; font-weight: bold"
+              >
+                Performance Evaluation
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <div class="card" style="width: 280px">
+            <img
+              src="../../assets/termination-proposel.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="text-align: center; font-weight: bold"
+              >
+                Termination documents
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <div class="card" style="width: 280px">
+            <img src="../../assets/health.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p
+                class="card-text"
+                style="text-align: center; font-weight: bold"
+              >
+                Safety and health documents
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-12 d-flex flex-row mt-5">
+      <h3 style="font-weight: bolder">Your Created Documents</h3>
+    </div>
+    <div class="col-md-12 d-flex flex-row mt-5" style="height: 5%">
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./home/employeefiles" style="text-decoration: none">
+          <button
+            type="button"
+            style="width: 280px; height: 70px"
+            class="btn btn-secondary"
+          >
+            <i style="margin-right: 12px" class="fa fa-folder"></i>Employee
+            Application Files
+          </button>
+        </a>
+      </div>
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <button
+            type="button"
+            style="width: 280px; height: 70px"
+            class="btn btn-secondary"
+          >
+            <i style="margin-right: 12px" class="fa fa-folder"></i>Performance Evaluation Files
+          </button>
+        </a>
+      </div>
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <button
+            type="button"
+            style="width: 280px; height: 70px"
+            class="btn btn-secondary"
+          >
+            <i style="margin-right: 12px" class="fa fa-folder"></i>Termination documents
+          </button>
+        </a>
+      </div>
+      <div class="col-md-3 mr-3" style="margin-right: 5px">
+        <a href="./employe-doc" style="text-decoration: none">
+          <button
+            type="button"
+            style="width: 280px; height: 70px"
+            class="btn btn-secondary"
+          >
+            <i style="margin-right: 12px" class="fa fa-folder"></i>Safety and health Files
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

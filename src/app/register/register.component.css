@@ -1,0 +1,47 @@
+.mainsdiv {
+  background-image: url("../../assets/signupimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.inputSign {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(217, 217, 233);
+  height: 30px;
+  padding: 8px;
+}
+
+.inputSigndrop{
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(217, 217, 233);
+  height: 30px;
+  padding: 3px 3px 3px 8px;
+  color: rgb(93, 93, 99);
+}
+
+@media only screen and (min-width: 767px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

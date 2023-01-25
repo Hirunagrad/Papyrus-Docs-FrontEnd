@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #434afd">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: white">Papyrus Docs</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            *ngIf="_authService.loggedIn()"
+            style="color: white"
+            routerLink="/home"
+            routerLinkActive="active"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item"></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            *ngIf="!_authService.loggedIn()"
+            routerLink="/login"
+            routerLinkActive="active"
+            style="color: white"
+            >Login</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            *ngIf="!_authService.loggedIn()"
+            routerLink="/register"
+            routerLinkActive="active"
+            style="color: white"
+            >Register</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/logout"
+            *ngIf="_authService.loggedIn()"
+            (click)="_authService.logOutUser()"
+            style="color: white"
+            >Logout</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            *ngIf="_authService.loggedIn()"
+            style="color: white"
+            routerLink="/chatapp"
+            routerLinkActive="active"
+            >Chat</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

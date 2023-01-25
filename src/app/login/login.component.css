@@ -1,0 +1,41 @@
+.mainsdiv
+{
+  background-image: url('../../assets/Alone2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vw;
+
+}
+
+
+.inputSign
+{
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(217, 217, 233);
+  height: 30px;
+  padding: 8px;
+
+}
+
+@media only screen and (min-width: 767px) {
+   .desktop{
+    display: block;
+   }
+
+   .mobile{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop{
+   display: none;
+  }
+
+  .mobile{
+    display: block;
+   }
+}

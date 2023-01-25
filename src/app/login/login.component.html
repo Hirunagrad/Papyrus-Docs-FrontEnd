@@ -1,0 +1,128 @@
+<div class="container-fluid mainsdiv mx-auto desktop">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-12">
+        <p
+          class="mt-4"
+          style="
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: #41555e;
+          "
+        >
+          Welcome to Papyrus Docs
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7"></div>
+      <div class="col-md-5 px-5">
+        <div class="card rounded-5 mt-5" style="width: 70%">
+          <div class="mt-5">
+            <h3 class="mb-0 text-center">Sign In</h3>
+          </div>
+          <div class="card-body px-5 mt-4">
+            <form>
+              <input
+                [(ngModel)]="loginUserData.email"
+                name="email"
+                type="text"
+                class="form-control rounded-0"
+                required
+                class="inputSign"
+                placeholder="Email Address"
+              />
+
+              <input
+                type="password"
+                [(ngModel)]="loginUserData.password"
+                name="password"
+                class="form-control rounded-0"
+                required
+                class="inputSign"
+                placeholder="Password"
+              />
+
+              <div class="d-flex justify-content-center mb-5">
+                <button
+                  (click)="loginUser()"
+                  type="button"
+                  class="btn btn-primary mt-3"
+                  style="width: 150px; border-radius: 10px"
+                >
+                  Sign In
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mainsdiv mx-auto mobile">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-12">
+        <p
+          class="mt-4"
+          style="
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: #41555e;
+          "
+        >
+          Welcome to Papyrus Docs
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card mt-5" style="border-radius: 45px">
+          <div class="mt-5">
+            <h3 class="mb-0 text-center">Sign In</h3>
+          </div>
+          <div class="card-body mt-4">
+            <form>
+              <input
+                [(ngModel)]="loginUserData.email"
+                name="email"
+                type="text"
+                class="form-control rounded-0"
+                required
+                class="inputSign"
+                placeholder="Email Address"
+              />
+
+              <input
+                type="password"
+                [(ngModel)]="loginUserData.password"
+                name="password"
+                class="form-control rounded-0"
+                required
+                class="inputSign"
+                placeholder="Password"
+              />
+
+              <div class="d-flex justify-content-center mb-5">
+                <button
+                  (click)="loginUser()"
+                  type="button"
+                  class="btn btn-primary mt-3"
+                  style="width: 150px; border-radius: 10px"
+                >
+                  Sign In
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
