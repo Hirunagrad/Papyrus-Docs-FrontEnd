@@ -30,7 +30,7 @@ describe('TemplateService', () => {
       expect(service).toBeTruthy();
     });
 
-    it('httpclinet get method', () => {
+    it('get Employee Application data method', () => {
       const testpost: any = [
         { id: 1, userId: 1, title: 'title 1', body: 'body1' },
         { id: 2, userId: 2, title: 'title 2', body: 'body2' },
@@ -68,7 +68,8 @@ describe('TemplateService', () => {
 
       httptestcontrol = TestBed.inject(HttpTestingController);
     });
-    it('httpclinet post method', () => {
+
+    it('Save Employee Data post method', () => {
       const testpost: any = {
         id: 1,
         userId: 1,
@@ -109,7 +110,7 @@ describe('TemplateService', () => {
 
       httptestcontrol = TestBed.inject(HttpTestingController);
     });
-    it('httpclinet DELETE method', () => {
+    it('DELETE Template data method', () => {
       const testpost: any = {
         id: 1,
         userId: 1,
@@ -155,7 +156,7 @@ describe('TemplateService', () => {
 
       httptestcontrol = TestBed.inject(HttpTestingController);
     });
-    it('httpclinet UPDATE method', () => {
+    it('UPDATE Template data method', () => {
       const testpost: any = {
         id: 1,
         userId: 1,

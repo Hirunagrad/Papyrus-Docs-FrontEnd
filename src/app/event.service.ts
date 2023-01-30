@@ -15,3 +15,5 @@ export class EventService {
     return this.http.get('https://papyrusdocs1.azurewebsites.net/api/special/');
   }
 }
+
+//gg
